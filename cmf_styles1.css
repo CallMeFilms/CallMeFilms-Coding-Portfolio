@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*
+   CMF Coding Portfolio Home Style Sheet
+
+   Filename: cmf_styles1.css
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+/* HTML and Body */
+
+html {
+  height: 100%;
+  /*background: url(codebackground.jpg) 100% / cover fixed no-repeat;*/
+  background-color: #F7D69D;
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  /*background-color: rgba(135, 135, 135, 0.75);*/
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 15px 0 25px, -15px 0 25px;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Navigation */
+
+header nav ul {
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: row wrap;
+
+  justify-content: space-around;
+
+  padding: 10px 0;
+}
+
+header nav ul a {
+  width: 25%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.5em;
+  color: #E59408;
+  background-color: #F7D69D;
+  border: 2px solid #E8BC71;
+}
+
+header nav ul a:hover, header nav ul a:active {
+  color: #C69540;
+  background-color: rgba(247, 214, 157, 0.5);
+}
+
+/* Main Section */
+
+main h1, main h2 {
+  background-color: #F7D69D;
+  border: 2px solid #E8BC71;
+}
+
+section#header h1 {
+  height: 100%;
+  padding: 10px 0 12.5px 50px;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+main h2 {
+  padding: 12.5px 0;
+  text-align: center;
+  font-size: 1.75em;
+  background-color: #F7D69D;
+  border: 2px solid #E8BC71;
+}
+
+section#whatFind {
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #CC9933;
+  border-top: 10px groove #E8BC71;
+  border-bottom: 10px groove #E8BC71;
+}
+
+section#codingLangs{
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section#codingLangs section {
+  margin: 10px 10px;
+  padding: 10px 10px;
+  width: 33.3%;
+  text-align: center;
+  background-color: #F7D69D;
+  border: 5px outset #E8BC71;
+}
+
+section#java, section#other {
+  flex: 1 2;
+}
+
+section#webDev {
+  flex: 2 1;
+}
+
+section#whatFind section h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+      body {
+        width: 100%;
+      }
+}
