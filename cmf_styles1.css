@@ -7,20 +7,20 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Barlow');
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
 /* HTML and Body */
 
 html {
   height: 100%;
   /*background: url(codebackground.jpg) 100% / cover fixed no-repeat;*/
-  background-color: #F7D69D;
+  background-color: #F6EDD3;
 }
 
 body {
   margin: 0 auto;
   width: 80%;
   height: 100%;
-  /*background-color: rgba(135, 135, 135, 0.75);*/
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 15px 0 25px, -15px 0 25px;
   font-family: 'Barlow', sans-serif;
@@ -44,44 +44,53 @@ header nav ul a {
   padding: 5px 0;
   text-align: center;
   font-size: 1.5em;
-  color: #E59408;
-  background-color: #F7D69D;
-  border: 2px solid #E8BC71;
+  color: #0A1827;
+  background-color: #9AC0BA;
+  border: 2px solid #5B9496;
 }
 
 header nav ul a:hover, header nav ul a:active {
-  color: #C69540;
-  background-color: rgba(247, 214, 157, 0.5);
+  background-color: #CCD9CE;
 }
 
 /* Main Section */
 
 main h1, main h2 {
-  background-color: #F7D69D;
-  border: 2px solid #E8BC71;
+  color: #0A1827;
+  background-color: #CCD9CE;
+  border-top: 2px solid #5B9496;
+  border-bottom: 2px solid #5B9496;
 }
 
 section#header h1 {
   height: 100%;
-  padding: 10px 0 12.5px 50px;
+  padding: 30px 0 35px 15px;
   margin-bottom: 10px;
-  font-size: 2em;
+  font-size: 3em;
+  line-height: 1em;
 }
 
 main h2 {
   padding: 12.5px 0;
   text-align: center;
   font-size: 1.75em;
-  background-color: #F7D69D;
-  border: 2px solid #E8BC71;
+  border-top: 5px solid #0A1827;
+  border-bottom: 5px solid #0A1827;
 }
 
 section#whatFind {
   margin: 0 auto;
   padding: 10px 0;
-  background-color: #CC9933;
-  border-top: 10px groove #E8BC71;
-  border-bottom: 10px groove #E8BC71;
+  color: #0A1827;
+  background-color: #5B9496;
+  border-top: 10px groove #0A1827;
+  border-bottom: 10px groove #0A1827;
+}
+
+section#whatFind section h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 5px;
 }
 
 section#codingLangs{
@@ -96,11 +105,11 @@ section#codingLangs{
 
 section#codingLangs section {
   margin: 10px 10px;
-  padding: 10px 10px;
+  padding: 20px 10px;
   width: 33.3%;
   text-align: center;
-  background-color: #F7D69D;
-  border: 5px outset #E8BC71;
+  background-color: #CCD9CE;
+  border: 5px solid #0A1827;
 }
 
 section#java, section#other {
@@ -111,10 +120,23 @@ section#webDev {
   flex: 2 1;
 }
 
-section#whatFind section h3 {
-  text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 5px;
+section#codingLangs p {
+  margin-bottom: 20px;
+}
+
+section#codingLangs a {
+  width: 100%;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  background-color: #9AC0BA;
+  border: 5px groove #657C80;
+}
+
+section#codingLangs a:hover, section#codingLangs a:active {
+  color: #41706B;
+  background-color: #9AC0BA;
+  border-color: #0A1827;
 }
 
 @media only screen and (max-width: 480px) {
