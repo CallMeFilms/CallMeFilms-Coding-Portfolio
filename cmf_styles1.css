@@ -14,7 +14,7 @@
 html {
   height: 100%;
   /*background: url(codebackground.jpg) 100% / cover fixed no-repeat;*/
-  background-color: #F6EDD3;
+  background-color: #FFB680;
 }
 
 body {
@@ -41,25 +41,27 @@ header nav ul {
 
 header nav ul a {
   width: 25%;
-  padding: 5px 0;
+  padding: 10px 0;
   text-align: center;
   font-size: 1.5em;
-  color: #0A1827;
-  background-color: #9AC0BA;
-  border: 2px solid #5B9496;
+  color: #95C6CC;
+  background-color: #006F7D;
+  border: 2px solid #95C6CC;
 }
 
 header nav ul a:hover, header nav ul a:active {
+  color: #B25500;
   background-color: #CCD9CE;
+  border-color: #004C5E;
 }
 
 /* Main Section */
 
 main h1, main h2 {
   color: #0A1827;
-  background-color: #CCD9CE;
-  border-top: 2px solid #5B9496;
-  border-bottom: 2px solid #5B9496;
+  background-color: #FFCAA2;
+  border-top: 10px solid #B27140;
+  border-bottom: 10px solid #B27140;
 }
 
 section#header h1 {
@@ -82,7 +84,7 @@ section#whatFind {
   margin: 0 auto;
   padding: 10px 0;
   color: #0A1827;
-  background-color: #5B9496;
+  background-color: #006F7D;
   border-top: 10px groove #0A1827;
   border-bottom: 10px groove #0A1827;
 }
@@ -108,8 +110,8 @@ section#codingLangs section {
   padding: 20px 10px;
   width: 33.3%;
   text-align: center;
-  background-color: #CCD9CE;
-  border: 5px solid #0A1827;
+  background-color: #FFCAA2;
+  border: 10px solid #0A1827;
 }
 
 section#java, section#other {
