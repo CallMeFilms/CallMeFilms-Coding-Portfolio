@@ -211,7 +211,7 @@ body {
   background-color: black;
   border-radius: 50%;
 
-  transition: background-color 0.5s;
+  transition: background-color 0.5s
 }
 
 .iconAnchs:hover .iconImg {
