@@ -2,6 +2,60 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
+.orangeNav {
+  -webkit-animation-name: orangeNav;
+    animation-name: orangeNav;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-fill-mode: both;
+    visibility: visible;
+}
+
+@-webkit-keyframes orangeNav {
+    0% {
+        background-color: blue;
+    }
+    100% {
+        background-color: #F2D0B9;
+    }
+}
+
+@keyframes orangeNav {
+    0% {
+        background-color: blue;
+    }
+    100% {
+        background-color: #F2D0B9;
+    }
+}
+
+.blueNav {
+  -webkit-animation-name: blueNav;
+    animation-name: blueNav;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-fill-mode: both;
+    visibility: visible;
+}
+
+@-webkit-keyframes blueNav {
+    0% {
+        background-color: #F2D0B9;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes blueNav {
+    0% {
+        background-color: #F2D0B9;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
 /* HTML and Body styles */
 
 html {
@@ -17,11 +71,11 @@ body {
 /* Header Styles */
 
 #headerNav {
+  position: fixed;
+  top: 0px;
   margin-left: 50%;
   width: 50%;
   height: 40px;
-  position: fixed;
-  top: 0px;
 }
 
 #headerNav ul {
@@ -30,7 +84,7 @@ body {
 
   flex: row wrap;
 
-  justify-content: space-around;
+  justify-content: space-between;
 
   height: 100%;
 }
@@ -45,13 +99,14 @@ body {
   font-size: 1.5em;
   border: 2.5px solid gray;
   background-color: #F2D0B9;
+  box-shadow: 20px 10px 30px black;
 
-  transition: width 1s, letter-spacing 1s, background-color 1s;
+  transition: width 1s, color 0.25s, background-color 1s;
 }
 
 #headerNav ul a:hover {
   width: 50%;
-  letter-spacing: 0.25em;
+  color: white;
   background-color: #ECB28B;
   border-color: black;
 }
@@ -83,6 +138,8 @@ body {
   background: url(portrait.jpg) 25% 20% / 150% no-repeat content-box fixed;
 }
 
+/* Aside Styles */
+
 #leftOne {
   top: 100px;
   padding: 25px;
@@ -110,9 +167,55 @@ body {
   font-size: 1.25em;
 }
 
-.icon {
+/* Icon Section Styles */
+
+#icons {
+  -webkit-display: flex;
+  display: flex;
+
+  flex-flow: row nowrap;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+}
+
+/* Icon Anchor Styles */
+
+.iconAnchs {
   width: 5%;
+  font-size: 75%;
+  /* transition: width 1s; */
+}
+
+/*  */
+
+#iconOne {
+  margin-right: 25px;
+}
+
+/* #iconOne:hover {
+  width: 15%;
+}
+
+#iconTwo:hover {
+  width: 15%;
+} */
+
+/* Icon Anchor Nested Elements Styles */
+
+.iconImg {
+  float: right;
+  max-width: 35px;
   background-color: black;
+  border-radius: 50%;
+
+  transition: background-color 0.5s;
+}
+
+.iconAnchs:hover .iconImg {
+  background-color: white;
 }
 
 /* Section Two Styles */
