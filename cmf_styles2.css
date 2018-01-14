@@ -2,58 +2,128 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-.orangeNav {
-  -webkit-animation-name: orangeNav;
-    animation-name: orangeNav;
+.blueToOrangeNav {
+  -webkit-animation-name: blueToOrangeNav;
+    animation-name: blueToOrangeNav;
     animation-duration: 0.5s;
     -webkit-animation-duration: 0.5s;
     animation-fill-mode: both;
     visibility: visible;
 }
 
-@-webkit-keyframes orangeNav {
-    0% {
-        background-color: blue;
-    }
-    100% {
-        background-color: #F2D0B9;
-    }
+@-webkit-keyframes blueToOrangeNav {
+  0% {
+    border-color: white;
+    background-color: #96A9EB;
+  }
+  100% {
+    border-color: gray;
+    background-color: #F2D0B9;
+  }
 }
 
-@keyframes orangeNav {
-    0% {
-        background-color: blue;
-    }
-    100% {
-        background-color: #F2D0B9;
-    }
+@keyframes blueToOrangeNav {
+  0% {
+    border-color: white;
+    background-color: #96A9EB;
+  }
+  100% {
+    border-color: gray;
+    background-color: #F2D0B9;
+  }
 }
 
-.blueNav {
-  -webkit-animation-name: blueNav;
-    animation-name: blueNav;
+.orangeToBlueNav {
+  -webkit-animation-name: orangeToBlueNav;
+    animation-name: orangeToBlueNav;
     animation-duration: 0.5s;
     -webkit-animation-duration: 0.5s;
     animation-fill-mode: both;
     visibility: visible;
 }
 
-@-webkit-keyframes blueNav {
-    0% {
-        background-color: #F2D0B9;
-    }
-    100% {
-        background-color: blue;
-    }
+@-webkit-keyframes orangeToBlueNav {
+  0% {
+    border-color: gray;
+    background-color: #F2D0B9;
+  }
+  100% {
+    border-color: white;
+    background-color: #96A9EB;
+  }
 }
 
-@keyframes blueNav {
-    0% {
-        background-color: #F2D0B9;
-    }
-    100% {
-        background-color: blue;
-    }
+@keyframes orangeToBlueNav {
+  0% {
+    border-color: gray;
+    background-color: #F2D0B9;
+  }
+  100% {
+    border-color: white;
+    background-color: #96A9EB;
+  }
+}
+
+.brightOrangeToBlueNav {
+  -webkit-animation-name: brightOrangeToBlueNav;
+    animation-name: brightOrangeToBlueNav;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-fill-mode: both;
+    visibility: visible;
+}
+
+@-webkit-keyframes brightOrangeToBlueNav {
+  0% {
+    border-color: gray;
+    background-color: #D9B2B2;
+  }
+  100% {
+    border-color: white;
+    background-color: #F2D0B9;
+  }
+}
+
+@keyframes brightOrangeToBlueNav {
+  0% {
+    border-color: gray;
+    background-color: #D9B2B2;
+  }
+  100% {
+    border-color: white;
+    background-color: #F2D0B9;
+  }
+}
+
+.blueToBrightOrangeNav {
+  -webkit-animation-name: blueToBrightOrangeNav;
+    animation-name: blueToBrightOrangeNav;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-fill-mode: both;
+    visibility: visible;
+}
+
+@-webkit-keyframes blueToBrightOrangeNav {
+  0% {
+    border-color: gray;
+    background-color: #F2D0B9;
+  }
+  100% {
+    border-color: white;
+    background-color: #E8B283;
+  }
+}
+
+@keyframes blueToBrightOrangeNav {
+  0% {
+    border-color: gray;
+    background-color: #F2D0B9;
+  }
+  100% {
+    border-color: white;
+    background-color: #E8B283;
+  }
 }
 
 /* HTML and Body styles */
@@ -140,7 +210,12 @@ body {
 
 /* Aside Styles */
 
-#leftOne {
+.leftAside {
+  -webkit-display: flex;
+  display: flex;
+
+  flex-flow: column;
+
   top: 100px;
   padding: 25px;
   background: linear-gradient(0deg, #96A9EB 4%, #D9B2B2 100%);
@@ -150,7 +225,7 @@ body {
   box-shadow: 0 0 100px 25px #D6B0B0;
 }
 
-#leftOne h1 {
+.leftAside h1 {
   margin-bottom: 15px;
   color: white;
   font-family: 'Roboto Slab', serif;
@@ -159,7 +234,7 @@ body {
   line-height: 1em;
 }
 
-#leftOne p {
+.leftAside p {
   margin-bottom: 25px;
   color: white;
   font-family: 'Roboto Slab', serif;
@@ -167,7 +242,32 @@ body {
   font-size: 1.25em;
 }
 
-/* Icon Section Styles */
+.rightAside {
+  top: 100px;
+  padding: 25px;
+  background: linear-gradient(0deg, #96A9EB 4%, #D9B2B2 100%);
+  text-align: right;
+}
+
+.rightAside h1 {
+  margin-bottom: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  font-size: 5em;
+  line-height: 1em;
+}
+
+.rightAside p {
+  margin-bottom: 25px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+  font-size: 1.25em;
+}
+
+/* Icon Styles */
 
 #icons {
   -webkit-display: flex;
@@ -176,34 +276,19 @@ body {
   flex-flow: row nowrap;
 
   justify-content: flex-start;
-  align-items: center;
 
   width: 100%;
 }
 
-/* Icon Anchor Styles */
-
 .iconAnchs {
   width: 5%;
   font-size: 75%;
-  /* transition: width 1s; */
 }
 
-/*  */
-
-#iconOne {
+#anchOne, #anchTwo {
   margin-right: 25px;
+  align-self: flex-start;
 }
-
-/* #iconOne:hover {
-  width: 15%;
-}
-
-#iconTwo:hover {
-  width: 15%;
-} */
-
-/* Icon Anchor Nested Elements Styles */
 
 .iconImg {
   float: right;
@@ -216,6 +301,41 @@ body {
 
 .iconAnchs:hover .iconImg {
   background-color: white;
+}
+
+/* My Work Button Styles */
+
+#myWorkAnch {
+  -webkit-display: flex;
+  display: flex;
+
+  flex-flow: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  float: right;
+  margin-top: 25px;
+  padding: 0 10px;
+  width: 150px;
+  height: 35px;
+  color: #6699FF;
+  font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 5%;
+
+  transition: color 1s, background-color 0.5s;
+}
+
+#myWorkAnch:hover {
+  color: black;
+  background-color: white;
+}
+
+#myWorkAnch img {
+  width: 35px;
 }
 
 /* Section Two Styles */
@@ -247,6 +367,16 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: lighter;
   font-size: 1.25em;
+}
+
+/* Section Three Styles */
+
+#secThree {
+  background: url(htmlcode.png) 0% 10% / 125% no-repeat content-box fixed;
+}
+
+#rightTwo {
+  background: linear-gradient(0deg, #E8B283 35%, #9ECB71);
 }
 
 /* @keyframes fadein {
